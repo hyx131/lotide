@@ -7,17 +7,13 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(arr1, arr2) {
-  let longestArr = 0;
-
-  if (arr1.length < arr2.length) {
-    longestArr = arr2.length;
+  if (arr1.length !== arr2.length) {
+    return false;
   } else {
-    longestArr = arr1.length;
-  }
-
-  for (let i = 0; i < longestArr; i++) {
-    while (arr1[i] !== arr2[i]) {
-      return false; 
+    for (let i = 0; i < arr1.length; i++) {
+      while (arr1[i] !== arr2[i]) {
+        return false; 
+      }
     }
   }
   return true;
@@ -38,7 +34,6 @@ const eqObjects = function(object1, object2) {
     }
     return true;
   }
-
   return false;
 };
 
