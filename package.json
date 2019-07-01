@@ -1,16 +1,15 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
+  "name": "@hyx131/lotide",
+  "version": "1.0.1",
   "description": "",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-    "chai": "^4.2.0"
-  },
+
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "chai": "^4.2.0"
   },
   "scripts": {
     "test": "mocha"
@@ -19,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/hyx131/lotide.git"
   },
-  "author": "",
+  "author": "hyx131",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hyx131/lotide/issues"
