@@ -1,19 +1,21 @@
-const eqArrays = function(arr1, arr2) {
-  let longestArr = 0;
+// const eqArrays = function(arr1, arr2) {
+//   let longestArr = 0;
 
-  if (arr1.length < arr2.length) {
-    longestArr = arr2.length;
-  } else {
-    longestArr = arr1.length;
-  }
+//   if (arr1.length < arr2.length) {
+//     longestArr = arr2.length;
+//   } else {
+//     longestArr = arr1.length;
+//   }
 
-  for (let i = 0; i < longestArr; i++) {
-    while (arr1[i] !== arr2[i]) {
-      return false; 
-    }
-  }
-  return true;
-};
+//   for (let i = 0; i < longestArr; i++) {
+//     while (arr1[i] !== arr2[i]) {
+//       return false; 
+//     }
+//   }
+//   return true;
+// };
+
+const eqArrays = require("./eqArrays");
 
 
 const eqObjects = function(object1, object2) {
@@ -45,6 +47,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertObjectsEqual;
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };

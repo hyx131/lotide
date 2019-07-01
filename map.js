@@ -32,6 +32,7 @@ const map = function(arr, callback) {
   return results;
 };
 
+module.exports = map;
 
 //test cases:
 
